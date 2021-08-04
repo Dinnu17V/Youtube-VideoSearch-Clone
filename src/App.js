@@ -22,7 +22,7 @@ class App extends React.Component {
 
   videoSearch = (term) => {
     let currentstate = this;
-    YTSearch({ term: term, key: 'AIzaSyC9KqsJdDDpHbptDi-APhx8fDSsu6LJMz4', num: 20 }, ytcount => {
+    YTSearch({ term: term, key: 'insert the API key here.....', num: 20 }, ytcount => {
       console.log(ytcount)
       currentstate.setState({ videos: ytcount, selectedVideo: ytcount[0] });
     })
